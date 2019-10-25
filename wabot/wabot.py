@@ -7,9 +7,8 @@ class WABot():
     def __init__(self, json):
         self.json = json
         self.dict_messages = json['messages']
-        self.instanceID = json['instanceId']
-        self.APIUrl = 'https://eu41.chat-api.com/instance74668/'
-        self.token = 'jxhevb9yztwz9xle'
+        self.APIUrl = 'https://eu41.chat-api.com/instance12345/'
+        self.token = 'abcdefg'
 
    
     def send_requests(self, method, data):
@@ -121,7 +120,7 @@ Commands:
                         return self.group(message['author'])
                     else:
                         return self.welcome(id, True)
-                else: return 'kek'
+                else: return 'NoCommand'
 
             
 
