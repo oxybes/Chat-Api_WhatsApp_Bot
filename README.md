@@ -240,7 +240,7 @@ if text[0].lower() == 'hi':
                 else: return 'NoCommand'
 ```
 
-#Flask 
+# Flask 
 Для обработки входящих запросов к нашему серверу используем данную функцию 
 ```python
 @app.route('/', methods=['POST'])
