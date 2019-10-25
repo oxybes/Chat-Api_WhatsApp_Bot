@@ -70,8 +70,7 @@ Commands:
     
     def ptt(self, chatID):        
             data = {
-            # "audio" : 'https://domain.com/Python/ptt.ogg',
-            'audio' : 'https://psv4.userapi.com/c852628//u139703268/audiomsg/d7/bebc192d01.ogg',
+            "audio" : 'https://domain.com/Python/ptt.ogg',
             "chatId" : chatID }
             return self.send_requests('sendAudio', data)
 
